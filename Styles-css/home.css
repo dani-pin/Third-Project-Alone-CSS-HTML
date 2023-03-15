@@ -1,0 +1,238 @@
+/*Showcase*/
+.showcase {
+  background-color: var(--primary-color);
+  color: white;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: SlideInFromRight 1s ease-in;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+
+.showcase p {
+  margin: 20px 1em 40px 1em;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0px;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input {
+  margin: 17px 0px;
+}
+
+.btn-form {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+}
+
+.btn-form:hover {
+  transform: scale(0.98);
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  transform: skewY(-3deg);
+}
+
+.div-info-showcase {
+  animation: SlideInFromLeft 1s ease-in;
+}
+
+.showcase-form h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+/*Stats*/
+.stats {
+  animation: SlideInFromBottom 1s ease-in;
+}
+.flex-stats {
+  text-align: center;
+  justify-content: space-around;
+}
+
+.stats h3 {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+.stats i {
+  padding: 0px 0px 9px 0px;
+}
+
+.p1 {
+  font-size: 35px;
+  padding: 0px 0px 12px 0px;
+  font-weight: 300;
+}
+
+.p2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+
+/*CLI Section*/
+.cli-flex {
+  margin: 55px auto;
+  justify-content: center;
+}
+
+.cli-card1 {
+  margin-bottom: 70px;
+}
+
+/*Cloud*/
+.container-cloud {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 70px;
+}
+
+.container-cloud h1 {
+  color: white;
+  margin-bottom: 18px;
+}
+
+.container-cloud h3 {
+  color: white;
+  margin-bottom: 28px;
+  font-weight: 300;
+}
+
+.btn-cloud {
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+.btn-cloud:hover {
+  transform: scale(0.98);
+}
+
+/*Languages*/
+.languages-flex {
+  flex-direction: column;
+}
+
+.flex-cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: all 0.2s;
+}
+
+.languages .card h4 {
+  margin-bottom: 9px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+/*MEDIA-Tablets and under*/
+@media (max-width: 768px) {
+  /*Showcase*/
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-info-showcase {
+    text-align: center;
+    margin-top: 30px;
+    animation: SlideInFromTop 1s ease-in;
+  }
+
+  .showcase-form {
+    margin: auto;
+    width: 100%;
+    animation: SlideInFromBottom 1s ease-in;
+  }
+
+  /*Stats*/
+  .stats h3 {
+    margin: 7rem 0px 3rem 0px;
+    max-width: 100%;
+  }
+
+  .flex-stats {
+    flex-direction: column;
+  }
+
+  .mini-box {
+    margin-bottom: 50px;
+  }
+  /*CLI Section*/
+  .cli-flex {
+    flex-direction: column;
+    margin: 0px;
+    align-items: stretch;
+  }
+
+  .cli-card1 {
+    margin: 0px;
+  }
+
+  .cli-card2 {
+    margin: 30px 0px;
+  }
+
+  /*Cloud*/
+  .flex-cloud {
+    flex-direction: column;
+  }
+  /*Languages*/
+  .languages h2 {
+    text-align: center;
+  }
+}
